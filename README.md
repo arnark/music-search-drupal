@@ -12,22 +12,39 @@ You search for a Song, Album or Artist, select the preferred data and submit the
 
 Content types:
 
-Song
+**Song**
+
 Field Album, entity reference to Album
+
 Field Title, text
+
 Field Genre, text
+
 Field Length, text
 
-Artist
+
+**Artist**
+
 Field Title, text
+
 Field Description, text
+
 Field Images, Image
+
 Field URL, Link
 
-Album
+
+**Album**
+
 Field Title, text
+
 Field Album Cover, Image
+
 Field Artist, text
+
 Field Genre, text
+
 Field Songs, List (text)
+
 Field Year, text
+
