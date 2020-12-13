@@ -1,0 +1,8 @@
+services:
+  music_search.spotify_client_id:
+    class: Drupal\music_search\MusicSearchApiKeys
+    arguments: ['@config.factory']
+  music_search.spotify_search:
+    class: Drupal\music_search\SpotifySearchService
+  music_search.discogs_search:
+    class: Drupal\music_search\DiscogsSearchService

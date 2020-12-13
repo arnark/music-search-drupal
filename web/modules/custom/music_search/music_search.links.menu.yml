@@ -1,0 +1,12 @@
+music_search.music_search_api_config:
+  title: 'API Key Config'
+  description: 'Edit API keys'
+  route_name: music_search.api_key_form
+  menu_name: main
+  weight: 0
+music_search.music_search_menu:
+  title: 'Music Search'
+  description: 'Add music from APIs!'
+  route_name: music_search.music_search
+  menu_name: main
+  weight: 0

@@ -1,0 +1,49 @@
+music_search.music_search:
+  path: '/music-search'
+  defaults:
+    _form: Drupal\music_search\Form\MusicDataSearchForm
+    _title: 'Music search'
+  requirements:
+    _permission: 'administer site configuration'
+music_search.music_search_step_2:
+  path: '/music-search-2'
+  defaults:
+    _form: Drupal\music_search\Form\MusicDataSearchStepTwoForm
+    _title: 'Music search - Step 2'
+  requirements:
+    _permission: 'administer site configuration'
+music_search.music_search_step_3:
+  path: '/music-search-3'
+  defaults:
+    _form: Drupal\music_search\Form\MusicDataSearchStepThreeForm
+    _title: 'Music search - Step 3'
+  requirements:
+    _permission: 'administer site configuration'
+music_search.api_key_form:
+  path: '/admin/config/api-key-configuration'
+  defaults:
+    _form: Drupal\music_search\Form\ApiKeyConfigurationForm
+    _title: 'API Key Configuration'
+  requirements:
+    _permission: 'administer site configuration'
+music_search.autocomplete.songs:
+  path: '/admin/music_search/autocomplete/songs'
+  defaults:
+    _controller: '\Drupal\music_search\Controller\AutocompleteSearchController::handleAutocompleteSongs'
+    _format: json
+  requirements:
+    _permission: 'access content'
+music_search.autocomplete.artists:
+  path: '/admin/music_search/autocomplete/artists'
+  defaults:
+    _controller: '\Drupal\music_search\Controller\AutocompleteSearchController::handleAutocompleteArtists'
+    _format: json
+  requirements:
+    _permission: 'access content'
+music_search.autocomplete.albums:
+  path: '/admin/music_search/autocomplete/albums'
+  defaults:
+    _controller: '\Drupal\music_search\Controller\AutocompleteSearchController::handleAutocompleteAlbums'
+    _format: json
+  requirements:
+    _permission: 'access content'
